@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="css/bootstrap-5.0.0-beta3-dist">
 </head>
 <body  background="img/bg.jpg" class="bg" width="auto" height="auto">
-  <h1>
+  <h1 id="h1">
     WELCOME TO PIZZA PALACE.
   </h1>
   <br>
@@ -32,7 +32,7 @@
         <tr>
           <td><img src="img/pizza1.jpg" alt="pizza" width="100px" height="100px"></td>
           <td><input type="checkbox" value="Big Italy">Big Italy</input></td>
-          <td><input type="text" size="10"></td>
+          <td class="big"><input type="text" size="10" type="checkbox" value=""></td>
           <td><input type="text" value="15.0" readonly size="10"></td>
           <td><input type="text" size="10"disable></td>
 
@@ -40,7 +40,7 @@
         <tr>
           <td><img src="img/pizza2.jpg" alt="pizza" width="100px" height="100px"></td>
           <td><input type="checkbox" value="Meat Lover">Meat Lover</input></td>
-          <td><input type="text" size="10"></td>
+          <td><input type="text" size="10" class="hide"></td>
           <td><input type="text" value="12.0" readonly size="10"></td>
           <td><input type="text" size="10"disable></td>
 
@@ -62,8 +62,18 @@
         </tr>
         <tr>
           <td colspan="2"><input type="Submit" value="Calculate Order Total"></input></td>
+          <td colspan="2"><input type="Submit" value="Clear Order"></input></td>
         </tr>
       </table>
+
+
+
+
+      <script src="js/script.js"></script>
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
 
 
 
@@ -71,4 +81,5 @@
 
 
   </div>
+  
 </html>
